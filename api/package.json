@@ -1,20 +1,8 @@
 {
-  "name": "cloud-notes-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start:api": "npm --workspace api run start",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0"
+    "firebase-admin": "^13.5.0"
   },
-  "private": true,
-  "workspaces": ["api", "web"]
+  "devDependencies": {
+    "express": "^5.1.0"
+  }
 }
