@@ -1,10 +1,12 @@
 import express from "express";
 import admin from "firebase-admin";
+import cors from "cors";
 
 admin.initializeApp(); // Uses Cloud Run's service account
 
 const db = admin.firestore();
 const app = express();
+app.use(cors({ origin: true })); // we’ll tighten to your Hosting domain later
 app.use(express.json());
 
 // Verify Firebase ID token from Authorization: Bearer <token>
